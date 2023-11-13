@@ -1,0 +1,19 @@
+.menu-bar{
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    border-bottom: 1px solid aliceblue;
+}
+
+.menu-bar-ul{
+    display: flex;
+    gap: 5em;
+    padding: 2em;
+}
+
+.menu-bar-a{
+    color: aliceblue;
+    text-decoration: none;
+}

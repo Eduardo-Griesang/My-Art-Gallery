@@ -1,0 +1,50 @@
+.container-content{
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img{
+    width: 50vw;
+}
+
+.content-div{
+    color: rgb(219, 227, 235);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 50vw;
+}
+
+@media screen and (max-width:1000px) {
+    .content-img{
+        width: 60vw;
+    }
+    .content-div{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content-img{
+        width: 70vw;
+    }
+    .content-div{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .content-img{
+        width: 80vw;
+    }
+    .content-div{
+        width: 80vw;
+    }
+}

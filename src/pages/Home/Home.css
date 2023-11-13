@@ -1,0 +1,44 @@
+.artigos{
+    background: #111111;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
+.artigos-main{
+    width: 45%;
+}
+
+.artigos-other{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 45%;
+}
+
+@media screen and (max-width:1000px) {
+    .artigos{
+        flex-direction: column;
+    }
+    .artigos-main{
+        width: 80%;
+    }
+    .artigos-other{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .artigos{
+        flex-direction: column;
+    }
+    .artigos-main{
+        width: 98%;
+    }
+    .artigos-other{
+        width: 98%;
+    }
+}
