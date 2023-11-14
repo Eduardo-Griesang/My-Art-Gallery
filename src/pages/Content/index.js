@@ -1,14 +1,20 @@
+import { useLocation } from "react-router";
 import Title from "../../components/Title";
 import "./Content.css";
 
-const Content = ({contentTitle, artPhoto, contentDescription, contentArt}) => {
+const Content = () => {
+
+  let { state } = useLocation()
+
+  const art = state.state
+
   return (
     <section className="container-content">
-      <Title title={contentTitle} />
-      <img src={ artPhoto } alt={ contentTitle } className="content-img" />
+      <Title title={art.title} />
+      <img src={ art.photo } alt={ art.title } className="content-img" />
       <div className="content-div">
-        <p>{ contentDescription }</p>
-        <p>{ contentArt }</p>
+        <p>{ art.description }</p>
+        <p>{ art.the_art }</p>
       </div>
     </section>
   );

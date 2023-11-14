@@ -7,21 +7,19 @@ const SmallCard = ({API}) => {
 
     const shortDescription = description.split('.')[0]
 
-    console.log(description, shortDescription)
-
     return (
-        <>
+        <div>
             <section className="small-card">
                 <img src={photo} alt={title} className="small-card-img" />
                 <div>
-                    <Link to={`/content/${id}`}>
+                    <Link to={`/content/${id}`} state={{state:API}}>
                         <h2 className="small-card-h2">{title}</h2>
                         <p className="small-card-p">{shortDescription}</p>
                     </Link>
                 </div>
             </section>
             <hr></hr>
-        </>
+        </div>
     )
 }
 

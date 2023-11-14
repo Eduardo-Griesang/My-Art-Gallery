@@ -1,22 +1,40 @@
-import './Paintings.css'
-import data from "../../data/ArtData.json"
-import { Link } from 'react-router-dom'
+import "./Paintings.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Paintings = () => {
-    return (
-        <body className='bod'>
-            {data.map((art) => {
-                return (
-                    <Link to={`content/${art.id}`}>
-                        <div className='paintings-div'>
-                            <img className='paintings-img' src={art.photo} />
-                            <span className='paintings-span'>{art.title}</span>
-                        </div>
-                    </Link>
-                )
-            })}
-        </body>
-    )
-}
+  const [art, setArt] = useState([]);
 
-export default Paintings
+  useEffect(() => {
+    getAPI();
+  }, []);
+
+  async function getAPI() {
+    try {
+      const promisse = await fetch("http://localhost:8000/art");
+      const data = await promisse.json();
+      setArt(data);
+    } catch (err) {
+      console.error("ERRO: ", err);
+    }
+  }
+
+  return (
+    <body className="bod">
+      {art.map((art) => {
+        return (
+            <section className="painting-sec">
+                <Link to={`../content/${art.id}`} state={{state:art}}>
+                    <div className="paintings-div">
+                    <img className="paintings-img" src={art.photo} />
+                    <span className="paintings-span">{art.title}</span>
+                    </div>
+                </Link>
+            </section>
+        );
+      })}
+    </body>
+  );
+};
+
+export default Paintings;

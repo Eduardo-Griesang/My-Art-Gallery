@@ -23,8 +23,6 @@ const Home = () => {
 
   const small = art.slice(1, 4)
 
-  console.log(small)
-
   return (
     <>
       <Title title={"My Art Gallery"} />

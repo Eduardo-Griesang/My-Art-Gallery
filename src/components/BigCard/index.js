@@ -12,10 +12,12 @@ const BigCard = ({ API }) => {
 
   const {photo, title, description, id} = art
 
+  console.log(art)
+
   return (
     <div className="container-big-card">
       <img src={photo} alt={ title } className="big-card-img" />
-      <Link to={`content/${id}`}>
+      <Link to={`content/${id}`} state={{state:art}}>
         <h2 className="big-card-h2">{ title }</h2>
         <p className="big-card-p">{ description }</p>
       </Link>
