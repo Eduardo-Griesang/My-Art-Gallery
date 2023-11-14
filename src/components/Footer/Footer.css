@@ -11,13 +11,13 @@ footer{
 
 .footer-h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .footer-nav{
     display: flex;
     gap: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .footer-a{
@@ -28,16 +28,16 @@ footer{
 
 @media screen and (max-width:1090px) {
     .footer-h3{
-        font-size: 1.7em
+        font-size: 1.5em
     }
     .footer-nav{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
 
 @media screen and (max-width:768px) {
     .footer-nav{
-        gap: 1.1em;
+        gap: 1em;
     }
     footer{
         padding-bottom: 2em;

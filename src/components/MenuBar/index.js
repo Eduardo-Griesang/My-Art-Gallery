@@ -12,6 +12,9 @@ const MenuBar = () => {
                 <li>
                     <Link to={'/paintings'} className="menu-bar-a">Painting</Link>
                 </li>
+                <li>
+                    <Link to={'/AddArt'} className="menu-bar-a">Add Art</Link>
+                </li>
             </ul>
         </nav>
     )
