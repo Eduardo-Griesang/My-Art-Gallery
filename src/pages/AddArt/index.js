@@ -43,7 +43,7 @@ const AddArt = () => {
     
     async function getAPILastId() {
         try {
-          const promisse = await fetch("http://localhost:8000/art");
+          const promisse = await fetch("https://art-gallery-api-fdf75ed882d3.herokuapp.com/art");
           const data = await promisse.json();
           data.reverse()
           setForm({...form, ["id"]: data[0].id + 1})
