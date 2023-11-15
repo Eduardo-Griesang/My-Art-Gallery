@@ -12,8 +12,6 @@ const BigCard = ({ API }) => {
 
   const {photo, title, description, id} = art
 
-  console.log(art)
-
   return (
     <div className="container-big-card">
       <img src={photo} alt={ title } className="big-card-img" />

@@ -30,6 +30,7 @@ const AddArt = () => {
             }
 
             window.alert('Art sent successfully')
+            setForm({...form, ["id"]: form.id + 1})
         } 
         catch(err){
             console.error('Error sending data: ', err.message)
@@ -45,11 +46,13 @@ const AddArt = () => {
           const promisse = await fetch("http://localhost:8000/art");
           const data = await promisse.json();
           data.reverse()
-          setForm({...form, ["id"]: data[0].id})
+          setForm({...form, ["id"]: data[0].id + 1})
         } catch (err) {
           console.error("ERRO: ", err);
         }
     }
+
+    console.log(form.id)
 
     return(
         <>
