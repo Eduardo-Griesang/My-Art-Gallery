@@ -1,7 +1,7 @@
 footer{
     color: aliceblue;
     background: #111111;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
     padding-top: 12em;
     display: flex;
     justify-content: space-around;
@@ -40,7 +40,7 @@ footer{
         gap: 1em;
     }
     footer{
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
 }
 
