@@ -1,6 +1,7 @@
 import "./Paintings.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Loading from "../../components/Loading";
 
 const Paintings = () => {
   const [art, setArt] = useState([]);
@@ -17,6 +18,10 @@ const Paintings = () => {
     } catch (err) {
       console.error("ERRO: ", err);
     }
+  }
+
+  if(art.length === 0){
+    return <Loading />
   }
 
   return (

@@ -3,6 +3,7 @@ import SmallCard from "../../components/SmallCard";
 import Title from "../../components/Title";
 import "./Home.css";
 import { useEffect, useState } from "react";
+import Loading from "../../components/Loading";
 
 const Home = () => {
   const [art, setArt] = useState([]);
@@ -19,6 +20,10 @@ const Home = () => {
     } catch (err) {
       console.error("ERRO: ", err);
     }
+  }
+
+  if(art.length === 0){
+    return <Loading title="My Art Gallery" />
   }
 
   const small = art.slice(1, 4)
