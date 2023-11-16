@@ -15,9 +15,11 @@ const AddArt = () => {
         setForm({...form, [e.target.name]: e.target.value,})
     }
     
-    async function handleSendData(){
+    async function handleSendData(e){
+        e.preventDefault()
+        console.log("sent")
         try{
-            const response = await fetch("http://localhost:8000/art", {
+            const response = await fetch("https://art-gallery-api-fdf75ed882d3.herokuapp.com/art", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -52,12 +54,10 @@ const AddArt = () => {
         }
     }
 
-    console.log(form.id)
-
     return(
         <>
             <Title title="Add New Art to Database" />
-            <body className='body-form'>
+            <section className='body-form'>
                 <form className='form'>
                     <h2 className='form-title'>Insert new art details:</h2>
                     <div className='form-div'>
@@ -78,7 +78,7 @@ const AddArt = () => {
                     </div>
                     <button type='submit' className='form-btn' onClick={handleSendData}>Submit</button>
                 </form>
-            </body>
+            </section>
         </>
     )
 }
