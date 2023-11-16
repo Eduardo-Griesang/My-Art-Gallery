@@ -4,6 +4,7 @@ import Title from "../../components/Title";
 import "./Home.css";
 import { useEffect, useState } from "react";
 import Loading from "../../components/Loading";
+import About from "../../components/About";
 
 const Home = () => {
   const [art, setArt] = useState([]);
@@ -43,6 +44,7 @@ const Home = () => {
           })}
         </div>
       </section>
+      <About />
     </>
   );
 };

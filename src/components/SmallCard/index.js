@@ -18,7 +18,7 @@ const SmallCard = ({API}) => {
                     </Link>
                 </div>
             </section>
-            <hr></hr>
+            {id != 4 ? <div className="bord"></div> : <></> }   
         </div>
     )
 }

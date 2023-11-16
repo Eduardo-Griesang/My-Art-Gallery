@@ -25,10 +25,10 @@ const Paintings = () => {
   }
 
   return (
-    <body className="bod">
+    <section className="bod">
       {art.map((art) => {
         return (
-            <section className="painting-sec">
+            <section className="painting-sec" key={art.id}>
                 <Link to={`../content/${art.id}`} state={{state:art}}>
                     <div className="paintings-div">
                     <img className="paintings-img" src={art.photo} />
@@ -38,7 +38,7 @@ const Paintings = () => {
             </section>
         );
       })}
-    </body>
+    </section>
   );
 };
 

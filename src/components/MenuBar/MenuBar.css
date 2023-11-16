@@ -17,3 +17,30 @@
     color: aliceblue;
     text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+    .menu-bar-ul{
+        padding: 2em 0.8em;
+        gap: 4em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-bar{
+        font-size: 1.125em;
+    }
+    .menu-bar-ul{
+        padding: 2em 0.8em;
+        gap: 3.5em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu-bar{
+        font-size: 1.125em;
+    }
+    .menu-bar-ul{
+        padding: 2em 0.7em;
+        gap: 3em;
+    }
+}

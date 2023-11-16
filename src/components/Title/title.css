@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 25vh;
+    font-size: 15em;
     height: 50vh;
     line-height: 0.85em;
     text-align: center;
@@ -13,24 +13,30 @@
 
 @media screen and (max-width: 1450px) {
     .title{
-        font-size: 20vh;
+        font-size: 13em;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .title{
+        font-size: 10em;
     }
 }
 
 @media screen and (max-width: 690px) {
     .title{
-        font-size: 14vh;
+        font-size: 9em;
     }
 }
 
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 490px) {
     .title{
-        font-size: 10.5vh;
+        font-size: 8em;
     }
 }
 
 @media screen and (max-width: 380px) {
     .title{
-        font-size: 10vh;
+        font-size: 7em;
     }
 }

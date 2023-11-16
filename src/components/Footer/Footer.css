@@ -6,12 +6,12 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     gap: 5em;
 }
 
 .footer-h3{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 .footer-nav{
@@ -28,7 +28,7 @@ footer{
 
 @media screen and (max-width:1090px) {
     .footer-h3{
-        font-size: 1.5em
+        font-size: 1.1em
     }
     .footer-nav{
         font-size: 1.1em;
