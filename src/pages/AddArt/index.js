@@ -17,15 +17,17 @@ const AddArt = () => {
     
     async function handleSendData(e){
         e.preventDefault()
-        console.log("sent")
         try{
             const response = await fetch("https://art-gallery-api-fdf75ed882d3.herokuapp.com/art", {
                 method: 'POST',
                 headers: {
+                    'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(form)
             })
+
+            console.log(JSON.stringify(form))
 
             if(!response.ok){
                 throw new Error('Network response was not ok!!!')
