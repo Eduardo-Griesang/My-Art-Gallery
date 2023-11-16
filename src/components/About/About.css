@@ -1,0 +1,55 @@
+.about{
+    background: #111111;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9em 4em 0 4em;
+}
+
+.about-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.about-text{
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    line-height: 1.1em;
+    text-align: center;
+    width: 80%;
+}
+
+.about-btn{
+    background: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 1.6em;
+    padding: 0.7em 2em;
+}
+
+.about-btn:hover{
+    background: #222222;
+}
+
+@media screen and (max-width: 1440px) {
+    .about-text{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about{
+        padding: 7em 2em 0 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-text{
+        width: 100%;
+    }
+}
