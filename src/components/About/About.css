@@ -14,12 +14,12 @@
     text-align: center;
 }
 
-.about-text{
-    font-size: 1.2rem;
-    padding-top: 0.8rem;
-    line-height: 1.1em;
+.about-text-area{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
     text-align: center;
-    width: 80%;
 }
 
 .about-btn{
@@ -36,20 +36,8 @@
     background: #222222;
 }
 
-@media screen and (max-width: 1440px) {
-    .about-text{
-        width: 90%;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .about{
         padding: 7em 2em 0 2em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about-text{
-        width: 100%;
     }
 }

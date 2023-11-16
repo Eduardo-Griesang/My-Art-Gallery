@@ -1,0 +1,19 @@
+.about-text{
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    line-height: 1.1em;
+    text-align: center;
+    width: 80%;
+}
+
+@media screen and (max-width: 1440px) {
+    .about-text{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-text{
+        width: 100%;
+    }
+}

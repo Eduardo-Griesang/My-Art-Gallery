@@ -2,8 +2,11 @@
     background: #111111;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 65vh;
 }
 
 .loading-img{
-    width: 11%;
+    width: 10%;
+    height: 16%;
 }

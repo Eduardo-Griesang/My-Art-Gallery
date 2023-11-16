@@ -1,7 +1,7 @@
 import "./Paintings.css";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Loading from "../../components/Loading";
+import Painting from "../../components/Painting";
 
 const Paintings = () => {
   const [art, setArt] = useState([]);
@@ -28,14 +28,7 @@ const Paintings = () => {
     <section className="bod">
       {art.map((art) => {
         return (
-            <section className="painting-sec" key={art.id}>
-                <Link to={`../content/${art.id}`} state={{state:art}}>
-                    <div className="paintings-div">
-                    <img className="paintings-img" src={art.photo} />
-                    <span className="paintings-span">{art.title}</span>
-                    </div>
-                </Link>
-            </section>
+            <Painting art={art} />
         );
       })}
     </section>

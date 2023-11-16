@@ -2,7 +2,8 @@ import BigCard from "../../components/BigCard";
 import SmallCard from "../../components/SmallCard";
 import Title from "../../components/Title";
 import "./Home.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import Loading from "../../components/Loading";
 import About from "../../components/About";
 
@@ -30,7 +31,7 @@ const Home = () => {
   const small = art.slice(1, 4)
 
   return (
-    <>
+    <section>
       <Title title={"My Art Gallery"} />
       <section className="artigos">
         <div className="artigos-main">
@@ -45,7 +46,7 @@ const Home = () => {
         </div>
       </section>
       <About />
-    </>
+    </section>
   );
 };
 

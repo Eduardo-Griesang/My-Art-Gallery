@@ -1,12 +1,15 @@
-.title{
+.title-cov{
     background-color: #111111;
+    padding: 8em;
+}
+
+.title{
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15em;
-    height: 50vh;
     line-height: 0.85em;
     text-align: center;
 }

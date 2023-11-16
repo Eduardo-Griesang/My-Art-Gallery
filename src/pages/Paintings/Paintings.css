@@ -7,37 +7,6 @@
     gap: 4em;
 }
 
-.painting-sec{
-    justify-self: center;
-}
-
-.paintings-div{
-    display: flex;
-    flex-direction: column;
-}
-
-.paintings-img{
-    border-radius: 5px;
-    width: 400px;
-}
-
-.paintings-span{
-    color: aliceblue;
-    padding-top: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.3em;
-}
-
-a{
-    text-decoration: none;
-}
-
-@media screen and (max-width: 1392px) {
-    .paintings-img{
-        width: 350px;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .bod{
         grid-template-columns: 1fr 1fr;
@@ -47,26 +16,11 @@ a{
     }
 }
 
-@media screen and (max-width: 877px) {
-    .paintings-img{
-        width: 350px;
-    }
-}
-
 @media screen and (max-width: 780px) {
     .bod{
         grid-template-columns: 1fr;
     }
     .paintings-img{
         width: 400px;
-    }
-}
-
-@media screen and (max-width: 515px) {
-    .paintings-img{
-        width: 70%;
-    }
-    .paintings-div{
-        align-items: center;
     }
 }
