@@ -23,8 +23,8 @@ const SmallCard = ({API}) => {
         <div ref={smallRef}>
             <motion.section className="small-card"
             variants={{
-                hidden: {y:50, x:150},
-                visible: {y:0, x:0}
+                hidden: {x: 150},
+                visible: {x: 0}
             }}
             initial= "hidden"
             transition={{duration:1}}

@@ -3,11 +3,14 @@ footer{
     background: #111111;
     padding-bottom: 2em;
     padding-top: 12em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 5em;
+}
+
+.footer-wrap{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    gap: 5em;
 }
 
 .footer-h3{
@@ -46,7 +49,9 @@ footer{
 
 @media screen and (max-width:510px) {
     footer{
-        flex-direction: column;
         gap: 2em;
+    }
+    .footer-wrap{
+        flex-direction: column;
     }
 }

@@ -28,8 +28,8 @@ const BigCard = ({ API }) => {
     <section ref={HomeRef}>
       <motion.div className="container-big-card"
       variants={{
-            hidden: {y:150, x:-150 },
-            visible: {y:0, x:0}
+            hidden: {y: 170},
+            visible: {y: 0}
           }}
           initial="hidden"
           transition={{duration: 1}}
