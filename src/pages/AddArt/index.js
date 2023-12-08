@@ -62,6 +62,7 @@ const AddArt = () => {
             <section className='body-form'>
                 <form className='form'>
                     <h2 className='form-title'>Insert new art details:</h2>
+                    <span style={{color: "red"}}>Adding new art function is currently unavailable</span>
                     <div className='form-div'>
                         <label className='form-label'>Name:</label>
                         <input className='form-input' type='text' name='title' value={form.title} onChange={handleChange} placeholder='Name of the art piece' required />
@@ -78,7 +79,7 @@ const AddArt = () => {
                         <label className='form-label'>About:</label>
                         <input className='form-input' type='text' name='the_art' value={form.the_art} onChange={handleChange} placeholder='How does this art make you feel' required />
                     </div>
-                    <button type='submit' className='form-btn' onClick={handleSendData}>Submit</button>
+                    <button type='submit' className='form-btn' onClick={handleSendData} disabled>Submit</button>
                 </form>
             </section>
         </>

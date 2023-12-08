@@ -2,15 +2,16 @@ import BigCard from "../../components/BigCard";
 import SmallCard from "../../components/SmallCard";
 import Title from "../../components/Title";
 import "./Home.css";
-import { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useState } from "react";
 import Loading from "../../components/Loading";
 import About from "../../components/About";
 
-const Home = () => {
-  const [art, setArt] = useState([]);
+import mock from "../../mock/data.json"
 
-  useEffect(() => {
+const Home = () => {
+  const [art, setArt] = useState(mock);
+
+  /*useEffect(() => {
     getAPI();
   }, []);
 
@@ -22,7 +23,7 @@ const Home = () => {
     } catch (err) {
       console.error("ERRO: ", err);
     }
-  }
+  }*/
 
   if(art.length === 0){
     return <Loading title="My Art Gallery" />
