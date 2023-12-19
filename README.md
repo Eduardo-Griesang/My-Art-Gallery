@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# About this project
 
 This is a project I built to store my favorite art pieces.
 
