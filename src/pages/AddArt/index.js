@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Title from '../../components/Title'
+import Input from './Input'
 import './AddArt.css'
 
 const AddArt = () => {
@@ -10,7 +11,7 @@ const AddArt = () => {
         "description": "",
         "the_art": ""
     })
-
+    
     const handleChange = (e) => {
         setForm({...form, [e.target.name]: e.target.value,})
     }
@@ -63,22 +64,38 @@ const AddArt = () => {
                 <form className='form'>
                     <h2 className='form-title'>Insert new art details:</h2>
                     <span style={{color: "red"}}>Adding new art function is currently unavailable</span>
-                    <div className='form-div'>
-                        <label className='form-label'>Name:</label>
-                        <input className='form-input' type='text' name='title' value={form.title} onChange={handleChange} placeholder='Name of the art piece' required />
-                    </div>
-                    <div className='form-div'>
-                        <label className='form-label'>Photo:</label>
-                        <input className='form-input' type='text' name='photo' value={form.photo} onChange={handleChange} placeholder='URL photo of the art piece' required />
-                    </div>
-                    <div className='form-div'>
-                        <label className='form-label'>Description:</label>
-                        <input className='form-input' type='text' name='description' value={form.description} onChange={handleChange} placeholder='Insert the common description' required />
-                    </div>
-                    <div className='form-div'>
-                        <label className='form-label'>About:</label>
-                        <input className='form-input' type='text' name='the_art' value={form.the_art} onChange={handleChange} placeholder='How does this art make you feel' required />
-                    </div>
+                    <Input 
+                        label="Name" 
+                        type="text" 
+                        name="title" 
+                        value={form.title} 
+                        change={handleChange} 
+                        placeholder='Name of the art piece' 
+                    />
+                    <Input 
+                        label="Photo" 
+                        type="text" 
+                        name="photo" 
+                        value={form.photo} 
+                        change={handleChange} 
+                        placeholder='URL photo of the art piece' 
+                    />
+                    <Input 
+                        label="Description" 
+                        type="text" 
+                        name="description" 
+                        value={form.description} 
+                        change={handleChange} 
+                        placeholder='Insert the common description' 
+                    />
+                    <Input 
+                        label="About" 
+                        type="text" 
+                        name="the_art" 
+                        value={form.the_art} 
+                        change={handleChange} 
+                        placeholder='How does this art make you feel' 
+                    />
                     <button type='submit' className='form-btn' onClick={handleSendData} disabled>Submit</button>
                 </form>
             </section>
